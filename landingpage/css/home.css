@@ -1,0 +1,26 @@
+
+#th_GridContainer tbody tr td{
+	width: 20px;
+    /* border: 0.5px solid #eee;
+    border-width: 0 1px; */
+}
+#th_GridContainer tbody tr {
+    display: flex;
+    justify-content: center;
+    border-color: #eef;
+}
+#th_GridContainer tbody {
+    border: 1px solid #eee;
+    display: inline-block;
+    box-sizing: content-box;
+}
+#th_GridContainer tbody td.select-seat {
+    color: lightgreen;
+}
+#th_GridContainer tbody td.blocked-seat {
+    color: red;
+}
+#th_GridContainer tbody td:not(.blocked-seat ):hover{
+    color: lime;
+	cursor:pointer;
+}

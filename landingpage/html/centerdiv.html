@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<style>
+div#container {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.center-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid blue;
+    border-radius:50%;
+}
+div#h1 {
+    height: 25em;
+    width: 25em;
+    background-color: lightblue;
+    
+}
+div#h2 {
+    height: 18em;
+    width: 18em;
+    background-color: orange;
+}
+div#h3 {
+    height: 10em;
+    width: 10em;
+    background-color: orange;
+   
+}
+</style>
+
+</head>
+<body><div id="container">
+<div id="h1" class="center-div">hahha1</div>
+<div id="h2" class="center-div">hahha 2</div>
+  <div id="h3" class="center-div">hahha 3</div>
+</div>
+</body>
+<script>
+(function(){
+    document.getElementById("container").addEventListener("click",function(){alert(event.target.innerText);},false);
+}
+)();
+</script></html>
